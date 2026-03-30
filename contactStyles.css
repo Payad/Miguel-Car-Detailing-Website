@@ -1,0 +1,338 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Hunterra-8MA3Z";
+    /* src: url('Users/ayadp/Downloads/black-mustang.ttf') */
+    src: url('Fonts/Hunterra-8MA3Z.ttf');
+    /* font-style: normal;
+    font-weight: 100; */
+}
+
+.nav-content {
+    /* position: absolute;
+    top: 0; */
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-bottom: 4.5rem;
+}
+
+.phone-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-align: center;
+}
+
+/* logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.logo-name {
+    font-family: 'Hunterra-8MA3Z'
+}
+
+.urban-title {
+    color: rgba(112, 112, 115, 1);
+}
+
+.auto-title {
+    color: rgba(155, 237, 170, 1);
+}
+
+.paint-title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* business hero nav section */
+.business-hero {
+    opacity: 0.3;
+    width: 100%;
+}
+
+.business-logo {
+    width: 20%;
+    z-index: 2;
+}
+
+.business-name {
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+
+/* line 155 dropdown */
+.drop-down {
+    margin: .5rem;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* nav menu */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    /* padding: 5rem 2rem; */
+    /* background-color: white; */
+    /* position: relative; */
+    height: 0;
+    transition: height 1s;
+    overflow: hidden;
+    /* color: rgb(50, 250, 50); */
+    color: rgb(50, 205, 50);
+    text-align: center;
+    font-family: 'Hunterra-8MA3Z';
+    
+    /* margin: 4rem 1rem; */
+    /* border: 1px solid black; */
+}
+
+.nav-link {
+    list-style-type: none;
+    /* padding: 1rem; */
+    /* padding: 12px; */
+    margin-top: 2rem;
+    /* padding: 5px; */
+    /* height: 0;
+    overflow: hidden */
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: lightgrey;
+    
+}
+
+.show-nav-links {
+    /* background-color: white; */
+    /* padding: 5px;
+    height: 2rem; */
+    /* overflow: initial; */
+    height: 12rem;
+    /* display: block; */
+    display: flex;
+    text-align: center;
+    /* padding: 1rem; */
+    transition: height 1s;
+    color: rgb(50, 205, 50);
+}
+
+/* social links */
+.social-links {
+    padding: 15px;
+}
+
+a.home-link, a.about-link, a.gallery-link {
+    text-decoration: none;
+}
+
+
+/* Main section */
+
+.contact-content {
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(112,112,115,1) 90%, rgba(255,255,255,1) 100% )
+}
+
+.contact-title {
+    margin: 2rem;
+    text-align: center;
+    font-family: 'Hunterra-8MA3Z';
+    color: rgb(50, 150, 50);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(50, 150, 50, 0.3);
+}
+
+input#first-name, input#last-name, input#email, input#phone, #text-box {
+    /* margin: rem 2rem; */
+    margin-bottom: 2rem;
+}
+
+label {
+    font-family: 'Hunterra-8MA3Z';
+    padding: 1rem 0;
+}
+
+textarea#text-box {
+    height: 100px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+/* .footer-business-name {
+    color: green;
+    color: linear-gradient rgba(155, 237, 170, 100);
+    color: linear-gradient(90deg, rgba(112,112,115,1) 28%, rgba(155,237,170,1) 63%, rgba(255,255,255,1) 100%);
+} */
+
+.footer-business-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-service {
+    text-align: center;
+    padding: 2px;
+}
+
+.terms-desc {
+    padding-top: 2rem;
+}
+
+.urban {
+    /* color: linear-gradient(90deg, rgba(112,112,115,1) 28%) */
+    color: rgba(112,112,115,1);
+    padding: 3px;
+}
+
+.auto {
+    /* color: linear-gradient(90deg, rgba(155,237,170,1) 63%) */
+    color: rgba(155,237,170,1);
+    padding: 3px;
+}
+
+.paint {
+    color: rgba(255,255,255,1);
+    padding: 3px;
+}
+
+h3, .footer-social-links {
+    text-align: center;
+    /* color: rgb(105, 205, 50); */
+    /* color: rgb(150, 250, 50); */
+    color: rgb(105, 250, 50);
+    /* color: rgb(150, 205, 50); */
+    font-family: 'Hunterra-8MA3Z';
+    font-size: 15px;
+}
+
+.copyright {
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: none;
+    /* text-decoration: underline; */
+}
+
+.footer-service-links {
+    padding: .5rem 2rem;
+    font-size: 10px;
+}
+
+.footer-service-link {
+    padding: 5px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* MEDIA 768px */
+
+@media screen and (min-width: 768px) {
+    .overlay {
+        height: 30%;
+    }
+
+    .drop-down {
+        display: none;
+    }
+
+    .business-hero {
+        height: 30vh;
+    }
+
+    .nav-links {
+        display: flex;
+        overflow: initial;
+        flex-direction: row;
+        z-index: 2;
+        position: relative;
+        margin: 2rem;
+    }
+
+    .nav-link {
+        margin-top: 0;
+        padding: 12px
+    }
+
+    .social-icon {
+        padding: 0px 5px;
+    }
+
+    .main-title {
+        padding-top: 5rem;
+    }
+
+    .main-desc {
+        padding: 2rem 5rem;
+    }
+
+    .social-links {
+        padding: 10px;
+    }
+
+    .contact-title {
+        padding-top: 5rem;
+    }
+
+    .about-description {
+        padding: 2rem 5rem;
+    }
+
+    .content-content {
+        margin: 0;
+    }
+
+    label {
+        font-family: 'Hunterra-8MA3Z';
+        padding: 1rem 0;
+        display: block;
+        margin: auto;
+    }
+
+    input#first-name, input#last-name, input#email, input#phone, #text-box {
+        margin-bottom: 2rem;
+        display: block;
+        margin: auto;
+        width: 15rem;
+    }
+}
